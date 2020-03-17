@@ -1,0 +1,38 @@
+body {
+    background-color: antiquewhite;
+}
+
+
+
+h1 {
+    color: teal;
+    transition: color 2s ease-in-out;
+}
+
+h2 {
+    color: wheat;
+}
+
+.clicked {
+    color: tomato;
+}
+
+.form,
+.greetings {
+    display: none;
+}
+
+
+.showing {
+    display: block;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+.js-toDoForm>li {
+    border: 1px solid black;
+    border-radius: 10%;
+}
