@@ -10,13 +10,14 @@
 </head>
 
 <body>
+    <!-- 시계-->
     <div class="js-clock">
         <h1 class="js-title">
-            00:00
 
         </h1>
-
     </div>
+
+    <!-- currentUser-->
     <form class='js-form form'>
         <input type="text" placeholder="what is your name?"" / >
 
@@ -26,12 +27,35 @@
         </h4>
 
 
+        <!-- todo list-->
         <form class="js-toDoForm">
             <input type="text" placeholder="Write a to do">
         </form>
+
         <ul class="js-toDoList">
 
         </ul>
+        <h1>
+            number guessing game
+        </h1>
+        <p>
+            We have selected a random number between 1 and 100.
+            See if you can guess it in 10 turns or less. We'll tell
+            you if your guess was too high or too low.
+        </p>
+
+        <form class="guess_form">
+            <label for="guessField">Enter a guess: </label>
+            <input type="number" placegolder="Write your number" class="guessField">
+
+
+        </form>
+        <div class="resultParas">
+            <p class="guesses"></p>
+            <p class="lastResult"></p>
+            <p class="lowOrHi"></p>
+        </div>
+        <script src="number.js"></script>
         <script src=" clock.js"></script>
         <script src="greeting.js"></script>
         <script src="todo.js"></script>
