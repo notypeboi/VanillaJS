@@ -2,63 +2,63 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavSCRIPT</title>
-    <link rel="stylesheet" href="index.css">
-    <script></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JavSCRIPT</title>
+  <link rel="stylesheet" href="index.css" />
+  <script></script>
 </head>
 
 <body>
-    <!-- 시계-->
-    <div class="js-clock">
-        <h1 class="js-title">
+  <!-- 시계-->
+  <div class="js-clock">
+    <h1 class="js-title"></h1>
+  </div>
 
-        </h1>
-    </div>
-
-    <!-- currentUser-->
-    <form class='js-form form'>
-        <input type="text" placeholder="what is your name?"" / >
-
+  <!-- currentUser-->
+  <form class="js-form form">
+    <input type="text" placeholder="what is your name?"" / >
     </form>
-    <h4 class=" js-greeting greetings">
+    <h4 class=" js-greeting greetings"></h4>
 
-        </h4>
+    <!-- todo list-->
+    <form class="js-toDoForm">
+      <input type="text" placeholder="Write a to do" />
+    </form>
 
+    <ul class="js-toDoList"></ul>
+    <h1>
+      number guessing game
+    </h1>
+    <p>
+      We have selected a random number between 1 and 100. See if you can guess
+      it in 10 turns or less. We'll tell you if your guess was too high or too
+      low.
+    </p>
 
-        <!-- todo list-->
-        <form class="js-toDoForm">
-            <input type="text" placeholder="Write a to do">
-        </form>
+    <form class="guess_form">
+      <label for="guessField">Enter a guess: </label>
+      <input type="number" placegolder="Write your number" class="guessField" />
+    </form>
+    <div class="resultParas">
+      <p class="guesses"></p>
+      <p class="lastResult"></p>
+      <p class="lowOrHi"></p>
+    </div>
+    <form class='searching'>
+      <input type="text" placeholder="Search Photos" />
 
-        <ul class="js-toDoList">
+      <div class="photoresult"></div>
+    </form>
 
-        </ul>
-        <h1>
-            number guessing game
-        </h1>
-        <p>
-            We have selected a random number between 1 and 100.
-            See if you can guess it in 10 turns or less. We'll tell
-            you if your guess was too high or too low.
-        </p>
-
-        <form class="guess_form">
-            <label for="guessField">Enter a guess: </label>
-            <input type="number" placegolder="Write your number" class="guessField">
-
-
-        </form>
-        <div class="resultParas">
-            <p class="guesses"></p>
-            <p class="lastResult"></p>
-            <p class="lowOrHi"></p>
-        </div>
-        <script src="number.js"></script>
-        <script src=" clock.js"></script>
-        <script src="greeting.js"></script>
-        <script src="todo.js"></script>
+    <span class="js-weather"> </span>
+    <script src="number.js"></script>
+    <script src=" clock.js"></script>
+    <script src="greeting.js"></script>
+    <script src="todo.js"></script>
+    <script src="bg.js"></script>
+    <script src="weather.js"></script>
+    <script src="SearchPhoto.js"></script>
 </body>
 
 </html>
